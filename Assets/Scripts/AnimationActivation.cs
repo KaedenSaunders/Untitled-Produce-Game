@@ -16,10 +16,7 @@ public class AnimationActivation : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.Play("pepperShakeAnim");
-            thisParticle.Play();
-        }
+        anim.Play("pepperShakeAnim");
+        thisParticle.Play();
     }
 }
