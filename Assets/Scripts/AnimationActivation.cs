@@ -16,7 +16,11 @@ public class AnimationActivation : MonoBehaviour
 
     void Update()
     {
-        anim.Play("pepperShakeAnim");
-        thisParticle.Play();
+        if (Time.frameCount % 200 == 0)
+        {
+            anim.Play("pepperShakeAnim");
+            thisParticle.Play();
+        }
+        
     }
 }
