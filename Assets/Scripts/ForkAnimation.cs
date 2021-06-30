@@ -5,20 +5,26 @@ using UnityEngine;
 public class ForkAnimation : MonoBehaviour
 {
 
-    private Animation anim;
+    public Animation anim;
     public ParticleSystem thisParticle;
 
     void Start()
     {
-        anim = GetComponent<Animation>();
+        //anim = GetComponent<Animation>();
     }
 
-    void Update()
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.E))
+    //    {
+    //        anim.Play("forkStab");
+    //        thisParticle.Play();
+    //    }
+    //}
+
+    public void PlayAnim()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            anim.Play("forkStab");
-            thisParticle.Play();
-        }
+        anim.Play("forkStab");
+        thisParticle.Play();
     }
 }

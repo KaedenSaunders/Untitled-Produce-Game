@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/PartyJam_2021.unity
+- path: Assets/Scenes/Scenes/Level Design.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

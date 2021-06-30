@@ -5,21 +5,27 @@ using UnityEngine;
 public class AnimationActivation : MonoBehaviour
 {
 
-    private Animation anim;
+    public Animation anim;
     public ParticleSystem thisParticle;
 
     void Start()
     {
-        anim = GetComponent<Animation>();
+        //anim = GetComponent<Animation>();
     }
 
 
-    void Update()
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        anim.Play("pepperShakeAnim");
+    //        thisParticle.Play();
+    //    }
+    //}
+
+    public void PlayAnim()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.Play("pepperShakeAnim");
-            thisParticle.Play();
-        }
+        anim.Play("pepperShakeAnim");
+        thisParticle.Play();
     }
 }

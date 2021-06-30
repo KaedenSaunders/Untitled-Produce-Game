@@ -5,22 +5,29 @@ using UnityEngine;
 public class KnifeAnimation : MonoBehaviour
 {
 
-    private Animation anim;
+    public Animation anim;
     public ParticleSystem thisParticle;
     public ParticleSystem attachment;
 
     void Start()
     {
-        anim = GetComponent<Animation>();
+        //anim = GetComponent<Animation>();
     }
 
-    void Update()
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Q))
+    //    {
+    //        anim.Play("knifeAttack_1");
+    //        thisParticle.Play();
+    //        attachment.Play();
+    //    }
+    //}
+
+    public void PlayAnim()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            anim.Play("knifeAttack_1");
-            thisParticle.Play();
-            attachment.Play();
-        }
+        anim.Play("knifeAttack_1");
+        thisParticle.Play();
+        attachment.Play();
     }
 }
