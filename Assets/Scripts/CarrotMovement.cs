@@ -8,6 +8,7 @@ public class CarrotMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 direction;
     private Vector3 nudge;
+    private Vector3 lookDir;
 
     private static Vector3 ray1;
     private static Vector3 ray2;
@@ -19,7 +20,7 @@ public class CarrotMovement : MonoBehaviour
 
     private bool groundedPlayer;
 
-    private float playerSpeed = 2.0f;
+    private float playerSpeed = 1.5f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
 
@@ -51,14 +52,12 @@ public class CarrotMovement : MonoBehaviour
         //    direction.y = 0f;
         //}
 
-        Vector3 normal = findNormal();
+        // this function is now used only to find the nudge vector
+        findNormal();
 
-        //transform.RotateAround(transform.position, normal, Vector3.Angle(transform.forward, direction));
-        transform.rotation = Quaternion.LookRotation(normal);
-        transform.rotation = Quaternion.LookRotation(transform.up.normalized);
-        //transform.RotateAround(transform.position, transform.up, Vector3.Angle(new Vector3(direction.x, 0, direction.z), transform.forward));
+        transform.rotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
 
-        controller.Move((nudge + direction) * Time.deltaTime);
+        controller.Move((nudge + direction) * playerSpeed * Time.deltaTime);
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -102,14 +101,13 @@ public class CarrotMovement : MonoBehaviour
             nudge = Vector3.zero;
             if (hit1.distance >= 0.25f || hit2.distance >= 0.25f || hit3.distance >= 0.25f)
             {
-                Debug.Log("hit");
                 nudge = ray1.normalized * hit1.distance * 2 + ray2.normalized * hit2.distance * 2 + ray3.normalized * hit3.distance * 2;
             }
 
             Plane plane = new Plane(hit1.point, hit2.point, hit3.point);
             normal = -plane.normal;
 
-            Debug.DrawRay(origin, normal, Color.green);
+            //Debug.DrawRay(origin, normal, Color.green);
         }
 
         
