@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CarrotMovement : MonoBehaviour
+public class VegetableMovement : MonoBehaviour
 {
+    private Animator animator;
+
     private CharacterController controller;
     private Vector3 direction;
     private Vector3 nudge;
@@ -18,10 +20,7 @@ public class CarrotMovement : MonoBehaviour
 
     private LayerMask layerMask = 1 << 2;
 
-    private bool groundedPlayer;
-
     private float playerSpeed = 1.5f;
-    private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
 
     // Start is called before the first frame update
@@ -39,6 +38,7 @@ public class CarrotMovement : MonoBehaviour
         ray2 = new Vector3(x, y, z);
         ray3 = new Vector3(x, y, -z);
         controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -64,6 +64,10 @@ public class CarrotMovement : MonoBehaviour
     {
         Vector2 movement = context.ReadValue<Vector2>();
         direction = new Vector3(-movement.x, 0, -movement.y);
+        if (direction.magnitude > 0)
+            animator.SetBool("walking", true);
+        else
+            animator.SetBool("walking", false);
     }
 
 
