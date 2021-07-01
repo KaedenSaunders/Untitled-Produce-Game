@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637607735586502419
+      ticks: 637607739064689490
     m_Hash: 1098714568
   m_LockFileStatus:
     m_FilePath: C:/Users/Kaeden/Documents/GitHub/Untitled-Produce-Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637607735586507426
+      ticks: 637607739064694500
     m_Hash: 6132236
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -3166,6 +3166,7 @@ m_ResolvedPackages:
     - 7.5.2
     - 7.5.3
     - 7.6.0
+    - 7.7.0
     - 8.0.1
     - 8.1.0
     - 8.2.0
@@ -3184,6 +3185,7 @@ m_ResolvedPackages:
     - 10.3.2
     - 10.4.0
     - 10.5.0
+    - 10.5.1
     - 11.0.0
     compatible:
     - 11.0.0
@@ -3320,6 +3322,7 @@ m_ResolvedPackages:
     - 7.5.2
     - 7.5.3
     - 7.6.0
+    - 7.7.0
     - 8.0.1
     - 8.1.0
     - 8.2.0
@@ -3337,6 +3340,7 @@ m_ResolvedPackages:
     - 10.3.2
     - 10.4.0
     - 10.5.0
+    - 10.5.1
     - 11.0.0
     compatible:
     - 11.0.0

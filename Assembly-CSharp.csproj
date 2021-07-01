@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\ForkAnimation.cs" />
     <Compile Include="Assets\Scripts\VegetableMovement.cs" />
     <Compile Include="Assets\Scripts\AnimationActivation.cs" />
+    <Compile Include="Assets\Scripts\CroutonPickup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
