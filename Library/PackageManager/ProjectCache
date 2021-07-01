@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637600595635742284
-    m_Hash: 1479468539
+      ticks: 637607732881661120
+    m_Hash: 1098714568
   m_LockFileStatus:
     m_FilePath: C:/Users/Kaeden/Documents/GitHub/Untitled-Produce-Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637600595635787292
-    m_Hash: 2087127747
+      ticks: 637607732881701605
+    m_Hash: 6132236
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -475,6 +475,7 @@ m_ResolvedPackages:
     - 7.5.2
     - 7.5.3
     - 7.6.0
+    - 7.7.0
     - 8.0.1
     - 8.1.0
     - 8.2.0
@@ -492,6 +493,7 @@ m_ResolvedPackages:
     - 10.3.2
     - 10.4.0
     - 10.5.0
+    - 10.5.1
     - 11.0.0
     compatible:
     - 11.0.0
@@ -885,12 +887,14 @@ m_ResolvedPackages:
     - 1.6.0-pre.3
     - 1.6.0-pre.4
     - 1.6.0-pre.5
+    - 1.6.1
     compatible:
     - 1.5.5
     - 1.6.0-pre.1
     - 1.6.0-pre.3
     - 1.6.0-pre.4
     - 1.6.0-pre.5
+    - 1.6.1
     verified: 1.5.5
   dependencies:
   - name: com.unity.modules.director
