@@ -242,3 +242,4 @@ Received Import Request.
   path: Assets/Prefabs/tomato_char.prefab
   artifactKey: Guid(b63cf99096f367a49b3d582ce7f5f553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/tomato_char.prefab using Guid(b63cf99096f367a49b3d582ce7f5f553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '402cc80a4b85669d53e1c65261db09ee') in 0.048072 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
