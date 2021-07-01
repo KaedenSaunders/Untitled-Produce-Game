@@ -4,11 +4,23 @@ ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
-      74: -8215834041849621776
-    second: Armature.001|Idle_char_tom
+      74: 6215786264025307104
+    second: Armature.001|Damage_tomato
   - first:
-      74: -8719497073392253463
-    second: Armature.001|Walk_char_tom
+      74: 8730615951098029640
+    second: Armature.001|Fix_tomato
+  - first:
+      74: -2931889015489991316
+    second: Armature.001|Idle_carry_tomato
+  - first:
+      74: -5684769249897132838
+    second: Armature.001|Idle_tomato
+  - first:
+      74: 1933575085480588446
+    second: Armature.001|Walk_carry_tomato
+  - first:
+      74: 6418478109934389170
+    second: Armature.001|Walk_tomato
   externalObjects: {}
   materials:
     materialImportMode: 2
