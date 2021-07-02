@@ -320,6 +320,9 @@
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.5.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@1.10.1-preview.1\Mono.Cecil.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
@@ -766,6 +769,12 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.MLAPI.Prototyping">
+      <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.MLAPI.Prototyping.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.MLAPI.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.MLAPI.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

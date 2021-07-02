@@ -5,20 +5,34 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637607739064689490
-    m_Hash: 1098714568
+      ticks: 637607800913523020
+    m_Hash: 2956526566
   m_LockFileStatus:
     m_FilePath: C:/Users/Kaeden/Documents/GitHub/Untitled-Produce-Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637607739064694500
-    m_Hash: 6132236
+      ticks: 637607800913567096
+    m_Hash: 1903125868
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
-  m_LocalFileStatus: []
+  m_LocalFileStatus:
+  - m_FilePath: C:\Users\Kaeden\Downloads\com.unity.multiplayer.mlapi-0.1.0.tgz/package.json
+    m_PathExists: 0
+    m_ContentTrackingEnabled: 1
+    m_ModificationDate:
+      serializedVersion: 2
+      ticks: 0
+    m_Hash: 0
+  - m_FilePath: C:\Users\Kaeden\Downloads\com.unity.multiplayer.mlapi-0.1.0.tgz
+    m_PathExists: 1
+    m_ContentTrackingEnabled: 1
+    m_ModificationDate:
+      serializedVersion: 2
+      ticks: 637607800834920265
+    m_Hash: 57045384
 m_ProjectPath: C:/Users/Kaeden/Documents/GitHub/Untitled-Produce-Game/Packages
 m_EditorVersion: 2021.1.12f1 (afcadd793de6)
 m_ResolvedPackages:
@@ -433,6 +447,68 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.0.2
+    nextVersion: 
+- packageId: com.unity.multiplayer.mlapi@file:C:\Users\Kaeden\Downloads\com.unity.multiplayer.mlapi-0.1.0.tgz
+  testable: 0
+  isDirectDependency: 1
+  version: 0.1.0
+  source: 6
+  resolvedPath: C:\Users\Kaeden\Documents\GitHub\Untitled-Produce-Game\Library\PackageCache\com.unity.multiplayer.mlapi@57548a8f236d-1625183283492
+  assetPath: Packages/com.unity.multiplayer.mlapi
+  name: com.unity.multiplayer.mlapi
+  displayName: MLAPI Networking Library
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: This the Core Unity Mid-level API that provides core SDK for multiplayer
+    games within unity
+  status: 4
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    verified: 
+  dependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.10.1-preview.1
+  resolvedDependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.10.1-preview.1
+  keywords:
+  - unity
+  registry:
+    id: 
+    name: 
+    url: 
+    scopes: []
+    isDefault: 0
+    capabilities: 0
+  hasRegistry: 0
+  hideInEditor: 0
+  entitlements:
+    isAllowed: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.multiplayer.mlapi.git
+    revision: 3e3aef6aa02c2a25359898319e5bd49d3518b57b
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
 - packageId: com.unity.render-pipelines.universal@11.0.0
   testable: 0
@@ -3386,6 +3462,72 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 11.0.0
+    nextVersion: 
+- packageId: com.unity.nuget.mono-cecil@1.10.1-preview.1
+  testable: 0
+  isDirectDependency: 0
+  version: 1.10.1-preview.1
+  source: 1
+  resolvedPath: C:\Users\Kaeden\Documents\GitHub\Untitled-Produce-Game\Library\PackageCache\com.unity.nuget.mono-cecil@1.10.1-preview.1
+  assetPath: Packages/com.unity.nuget.mono-cecil
+  name: com.unity.nuget.mono-cecil
+  displayName: Mono Cecil
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
+
+
+    This
+    package is intended for internal Unity use only. Most Unity users will be better
+    suite using the existing community tooling.
+
+    To avoid assembly clashes, please
+    use this package if you intend to use Mono.Cecil.'
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    compatible:
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    verified: 
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hasRegistry: 1
+  hideInEditor: 1
+  entitlements:
+    isAllowed: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637414275090000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
+    revision: a3a6bd3697f92f6872f64c08a98ef2331394cd16
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
 - packageId: com.unity.nuget.newtonsoft-json@2.0.0
   testable: 0

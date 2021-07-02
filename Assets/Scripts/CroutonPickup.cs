@@ -6,6 +6,7 @@ public class CroutonPickup : MonoBehaviour
 {
     private LayerMask CroutonMask;
     private float PhysicsSphereRadius = .35f;
+    private GameObject ClosestCrouton;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,8 @@ public class CroutonPickup : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, PhysicsSphereRadius, CroutonMask);
         foreach (var hitCollider in colliders)
         {
+            if (hitCollider.transform.position.magnitude < ClosestCrouton.transform.position.magnitude)
+
             Debug.Log(hitCollider.transform.position);
         }
     }
