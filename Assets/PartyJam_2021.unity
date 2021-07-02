@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5b9a776df3e7ee74a87a72df5f0769ba, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5b9a776df3e7ee74a87a72df5f0769ba, type: 3}
       propertyPath: m_LocalScale.x
@@ -228,7 +228,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fd2d39060edb0b848a5f0bf3aae14ce6, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fd2d39060edb0b848a5f0bf3aae14ce6, type: 3}
       propertyPath: m_LocalScale.y
@@ -332,6 +332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166636906}
+  - component: {fileID: 166636907}
   m_Layer: 0
   m_Name: Crack 1
   m_TagString: Untagged
@@ -347,12 +348,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166636905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.89, y: 6.73, z: 5.58}
+  m_LocalPosition: {x: -1.47, y: 6.37, z: 4.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 640053396}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &166636907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166636905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e77665bddfb97446881c15c52aea3c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCrack:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 640053397}
+        m_TargetAssemblyTypeName: BowlDestuctionManager, Assembly-CSharp
+        m_MethodName: getHit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  speedToHurtCrack: 0.1
 --- !u!1 &182028702
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,19 +412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84c2d8dfe509a34fb59e2b81f8e1319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageBufferSize: 5120
-  MaxConnections: 100
-  MaxSentMessageQueueSize: 128
-  ConnectAddress: 127.0.0.1
-  ConnectPort: 7777
-  ServerListenPort: 7777
-  ServerWebsocketListenPort: 8887
-  SupportWebsocket: 0
-  Channels: []
-  UseMLAPIRelay: 0
-  MLAPIRelayAddress: 184.72.104.138
-  MLAPIRelayPort: 8888
-  MessageSendMode: 0
 --- !u!114 &182028704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,50 +424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593a2fe42fa9d37498c96f9a383b6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DontDestroy: 1
-  RunInBackground: 1
-  LogLevel: 1
-  NetworkConfig:
-    ProtocolVersion: 0
-    NetworkTransport: {fileID: 182028703}
-    RegisteredScenes:
-    - PartyJam_2021
-    AllowRuntimeSceneChanges: 0
-    NetworkPrefabs:
-    - Prefab: {fileID: 1845340895112182953, guid: 9afbb6a696dd9184994a52dfa8054777, type: 3}
-      PlayerPrefab: 0
-    - Prefab: {fileID: 2590278961797314397, guid: 7d26d8d3ee272e8499556e78682783f7, type: 3}
-      PlayerPrefab: 1
-    PlayerPrefabHash:
-      id: 0
-    CreatePlayerPrefab: 1
-    ReceiveTickrate: 64
-    NetworkTickIntervalSec: 0.05
-    MaxReceiveEventsPerTickRate: 500
-    EventTickrate: 64
-    ClientConnectionBufferTimeout: 10
-    ConnectionApproval: 0
-    ConnectionData: 
-    EnableTimeResync: 0
-    TimeResyncInterval: 30
-    EnableNetworkVariable: 1
-    EnsureNetworkVariableLengthSafety: 0
-    EnableSceneManagement: 1
-    ForceSamePrefabs: 1
-    UsePrefabSync: 0
-    RecycleNetworkIds: 1
-    NetworkIdRecycleDelay: 120
-    RpcHashSize: 0
-    LoadSceneTimeOut: 120
-    EnableMessageBuffering: 1
-    MessageBufferTimeout: 20
-    EnableNetworkLogs: 1
-  references:
-    version: 1
-    00000000:
-      type: {class: NullableBoolSerializable, ns: MLAPI.Configuration, asm: Unity.Multiplayer.MLAPI.Runtime}
-      data:
-        Value: 7645120391690028710
 --- !u!4 &182028705
 Transform:
   m_ObjectHideFlags: 0
@@ -475,6 +447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 198152949}
+  - component: {fileID: 198152950}
   m_Layer: 0
   m_Name: Crack 3
   m_TagString: Untagged
@@ -490,12 +463,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198152948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 6.415, z: 3.14}
+  m_LocalPosition: {x: -4.789, y: 6.415, z: 2.986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 640053396}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &198152950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198152948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e77665bddfb97446881c15c52aea3c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCrack:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 640053397}
+        m_TargetAssemblyTypeName: BowlDestuctionManager, Assembly-CSharp
+        m_MethodName: getHit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  speedToHurtCrack: 0.1
 --- !u!1 &199859631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5316510414922318059, guid: 1b035e25d6feec14b9da8dbc21466a76, type: 3}
@@ -578,27 +579,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 600f9d3edfe34e543a521eaba2a37d62, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8237836
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 600f9d3edfe34e543a521eaba2a37d62, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8237836
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 600f9d3edfe34e543a521eaba2a37d62, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8237836
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 600f9d3edfe34e543a521eaba2a37d62, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.45
+      value: -3.434199
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 600f9d3edfe34e543a521eaba2a37d62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.098
+      value: 6.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 600f9d3edfe34e543a521eaba2a37d62, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.56
+      value: 4.28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 600f9d3edfe34e543a521eaba2a37d62, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1053,7 +1054,7 @@ Transform:
   m_Children:
   - {fileID: 2100961173}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 51.654, z: 0}
 --- !u!1 &640053395
 GameObject:
@@ -1064,6 +1065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 640053396}
+  - component: {fileID: 640053397}
   m_Layer: 0
   m_Name: BowlCrackManager
   m_TagString: Untagged
@@ -1088,6 +1090,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &640053397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640053395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f1a2e8d5742744d9f2cab51d9f72a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RequiredDamage: 0
+  Cracks:
+  - {fileID: 166636905}
+  - {fileID: 1505702635}
+  - {fileID: 198152948}
+  MinTimeToCreateCrack: 15
+  MaxTimeToCreateCrack: 45
+  MinTimeUntilCrackRemoved: 10
+  MaxTimeUntilCrackRemoved: 20
+  doCrackCooldown: 1
+  onBowlDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &650221085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1146,7 @@ Transform:
   - {fileID: 951360933}
   - {fileID: 612326885}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &659929037
 PrefabInstance:
@@ -2534,6 +2561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1505702636}
+  - component: {fileID: 1505702637}
   m_Layer: 0
   m_Name: Crack 2
   m_TagString: Untagged
@@ -2555,6 +2583,34 @@ Transform:
   m_Father: {fileID: 640053396}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505702637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505702635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e77665bddfb97446881c15c52aea3c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCrack:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 640053397}
+        m_TargetAssemblyTypeName: BowlDestuctionManager, Assembly-CSharp
+        m_MethodName: getHit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  speedToHurtCrack: 0.1
 --- !u!1 &1797346169
 GameObject:
   m_ObjectHideFlags: 0
@@ -7564,7 +7620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1861955714
 GameObject:
@@ -7767,7 +7823,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5b9a776df3e7ee74a87a72df5f0769ba, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5b9a776df3e7ee74a87a72df5f0769ba, type: 3}
       propertyPath: m_LocalScale.x
