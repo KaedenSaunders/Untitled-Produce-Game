@@ -54,8 +54,8 @@ public class VegetableMovement : MonoBehaviour
 
         // this function is now used only to find the nudge vector
         findNormal();
-
-        transform.rotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        if (new Vector3(direction.x, 0, direction.z) != Vector3.zero)
+            transform.rotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
 
         controller.Move((nudge + direction) * playerSpeed * Time.deltaTime);
     }
