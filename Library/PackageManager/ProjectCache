@@ -5,7 +5,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637607930065529846
+=======
+      ticks: 637607910179941999
+>>>>>>> Stashed changes
     m_Hash: 610157638
   m_LockFileStatus:
     m_FilePath: C:/Users/Kaeden/Documents/GitHub/Untitled-Produce-Game/Packages/packages-lock.json
@@ -13,7 +17,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637607930065534844
+=======
+      ticks: 637607910179947021
+>>>>>>> Stashed changes
     m_Hash: 3073229442
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

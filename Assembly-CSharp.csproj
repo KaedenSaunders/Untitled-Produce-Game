@@ -69,8 +69,11 @@
     <Compile Include="Assets\Scripts\ClientManager.cs" />
     <Compile Include="Assets\Scripts\VegetableMovement.cs" />
     <Compile Include="Assets\Scripts\AnimationActivation.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\BowlDestuctionManager.cs" />
     <Compile Include="Assets\Scripts\bowlCrack.cs" />
+=======
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
