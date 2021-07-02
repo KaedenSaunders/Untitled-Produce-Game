@@ -212,3 +212,4 @@ Received Import Request.
   path: Assets/Scripts/CameraShake.cs
   artifactKey: Guid(d15cd043a2fef2b40a199b822903e343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/CameraShake.cs using Guid(d15cd043a2fef2b40a199b822903e343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f98daf20d4b1dcb0d731e8c6433a03e5') in 0.006870 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
