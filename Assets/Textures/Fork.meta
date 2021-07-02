@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f76399b3837b062488b18a78b625c0af
+=======
+guid: a930c8ea3b74b2e449df9cf0d7ab8c07
+>>>>>>> Merge-of-movement-and-kitchen-scene
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
