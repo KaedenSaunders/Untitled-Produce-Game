@@ -15,10 +15,10 @@ public class ForkAnimation : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            anim.Play("forkStab");
-            thisParticle.Play();
-        }
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    anim.Play("forkStab");
+        //    thisParticle.Play();
+        //}
     }
 }

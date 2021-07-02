@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class VegetableMovement : MonoBehaviour
 {
     private Animator animator;
-
     private CharacterController controller;
+
     private Vector3 direction;
     private Vector3 nudge;
 
@@ -53,6 +54,9 @@ public class VegetableMovement : MonoBehaviour
         findNormal();
         if (new Vector3(direction.x, 0, direction.z) != Vector3.zero)
             transform.rotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+
+        if (health <= 0)
+            SceneManager.LoadScene(0);
 
         if (!stunned)
             controller.Move((nudge + direction) * playerSpeed * Time.deltaTime);
@@ -112,5 +116,13 @@ public class VegetableMovement : MonoBehaviour
             normal = -plane.normal;
         }
         return normal;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Fork")
+        {
+            health--;
+        }
     }
 }

@@ -5,8 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/PartyJam_2021.unity
+    guid: f380a8161435599468403430bc80e9f0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 5bd2a88fe5f3c594d987f1fc079c4069, type: 2}

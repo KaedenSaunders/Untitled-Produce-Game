@@ -44,6 +44,8 @@ public class BowlDestuctionManager : MonoBehaviour
             else
                 SelectAndActivateRandomCrack();
         }
+        if (DamageDealt >= RequiredDamage)
+            onBowlDestroyed.Invoke();
     }
 
 
@@ -75,5 +77,6 @@ public class BowlDestuctionManager : MonoBehaviour
             doCrackCooldown = false;
             onBowlDestroyed.Invoke();
         }
+        DeactivateCurrentCrack();
     }
 }

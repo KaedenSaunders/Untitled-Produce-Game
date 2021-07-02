@@ -11,9 +11,10 @@ public class BowlCrack : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Throwable" && other.GetComponent<Rigidbody>().velocity.magnitude >= speedToHurtCrack)
+        other.TryGetComponent(out Rigidbody body);
+        if (body && other.GetComponent<Rigidbody>().velocity.magnitude >= speedToHurtCrack)
         {
-            print("Attempting to crack the bowl.");
+            Debug.Log("Attempting to crack the bowl.");
             onCrack.Invoke();
         }
     }

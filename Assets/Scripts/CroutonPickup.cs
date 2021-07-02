@@ -59,14 +59,12 @@ public class CroutonPickup : MonoBehaviour
             else if (ClosestCrouton)
             {
                 // just picked something up
-                Debug.Log("Picked up");
                 carrying = true;
                 animator.SetBool("carrying", true);
                 ClosestCrouton.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                 ClosestCrouton.transform.SetParent(transform);
                 ClosestCrouton.transform.position = transform.position + transform.up * 0.25f + transform.forward * 0.25f;
             }
-            Debug.Log("Called");
         }
     }
 }
