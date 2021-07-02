@@ -63,17 +63,14 @@
     <Compile Include="Assets\Scripts\CroutonPickup.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\KnifeAnimation.cs" />
+    <Compile Include="Assets\Scripts\BowlDestuctionManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\ForkAnimation.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\ClientManager.cs" />
     <Compile Include="Assets\Scripts\VegetableMovement.cs" />
-    <Compile Include="Assets\Scripts\AnimationActivation.cs" />
-<<<<<<< Updated upstream
-    <Compile Include="Assets\Scripts\BowlDestuctionManager.cs" />
     <Compile Include="Assets\Scripts\bowlCrack.cs" />
-=======
->>>>>>> Stashed changes
+    <Compile Include="Assets\Scripts\AnimationActivation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
