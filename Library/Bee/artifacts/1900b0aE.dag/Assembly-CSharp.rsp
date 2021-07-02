@@ -337,6 +337,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/AnimationActivation.cs"
+"Assets/Scripts/bowlCrack.cs"
+"Assets/Scripts/BowlDestuctionManager.cs"
 "Assets/Scripts/CameraShake.cs"
 "Assets/Scripts/ClientManager.cs"
 "Assets/Scripts/CroutonPickup.cs"
