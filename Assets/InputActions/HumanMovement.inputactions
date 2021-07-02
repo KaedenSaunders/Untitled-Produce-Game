@@ -1,0 +1,21 @@
+{
+    "name": "HumanMovement",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "14a94d7b-a7d4-41d2-83a6-89eef6016f7c",
+            "actions": [
+                {
+                    "name": "Select Fork",
+                    "type": "Button",
+                    "id": "84c72713-7cd4-4dae-be27-746b9fc02e1e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": []
+}

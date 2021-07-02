@@ -65,10 +65,10 @@
     <Compile Include="Assets\Scripts\KnifeAnimation.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\ForkAnimation.cs" />
+    <Compile Include="Assets\Scripts\InputManager.cs" />
+    <Compile Include="Assets\Scripts\ClientManager.cs" />
     <Compile Include="Assets\Scripts\VegetableMovement.cs" />
     <Compile Include="Assets\Scripts\AnimationActivation.cs" />
-    <Compile Include="Assets\Scripts\ClientManager.cs" />
-    <Compile Include="Assets\Scripts\InputManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -10,7 +10,6 @@ public class VegetableMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 direction;
     private Vector3 nudge;
-    private Vector3 lookDir;
 
     private static Vector3 ray1;
     private static Vector3 ray2;
@@ -22,6 +21,10 @@ public class VegetableMovement : MonoBehaviour
 
     private float playerSpeed = 1.5f;
     private float gravityValue = -9.81f;
+
+    public bool stunned = false;
+
+    public float health = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -46,18 +49,15 @@ public class VegetableMovement : MonoBehaviour
     {
         direction.y += gravityValue * Time.deltaTime;
 
-        //groundedPlayer = controller.isGrounded;
-        //if (groundedPlayer && direction.y < 0)
-        //{
-        //    direction.y = 0f;
-        //}
-
         // this function is now used only to find the nudge vector
         findNormal();
         if (new Vector3(direction.x, 0, direction.z) != Vector3.zero)
             transform.rotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
 
-        controller.Move((nudge + direction) * playerSpeed * Time.deltaTime);
+        if (!stunned)
+            controller.Move((nudge + direction) * playerSpeed * Time.deltaTime);
+        else
+            animator.SetBool("stunned", true);
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -110,12 +110,7 @@ public class VegetableMovement : MonoBehaviour
 
             Plane plane = new Plane(hit1.point, hit2.point, hit3.point);
             normal = -plane.normal;
-
-            //Debug.DrawRay(origin, normal, Color.green);
         }
-
-        
-
         return normal;
     }
 }

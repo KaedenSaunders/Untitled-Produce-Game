@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637607800913523020
-    m_Hash: 2956526566
+      ticks: 637607910179941999
+    m_Hash: 610157638
   m_LockFileStatus:
     m_FilePath: C:/Users/Kaeden/Documents/GitHub/Untitled-Produce-Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637607800913567096
-    m_Hash: 1903125868
+      ticks: 637607910179947021
+    m_Hash: 3073229442
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -468,8 +468,10 @@ m_ResolvedPackages:
   status: 4
   errors: []
   versions:
-    all: []
-    compatible: []
+    all:
+    - 0.1.0
+    compatible:
+    - 0.1.0
     verified: 
   dependencies:
   - name: com.unity.modules.ai
