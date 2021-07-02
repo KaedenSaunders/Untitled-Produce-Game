@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/PartyJam_2021.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
